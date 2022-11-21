@@ -92,7 +92,9 @@
               <use href="./images/icons/icons.svg#icon-close"></use>
             </svg>
           </button>
-          <strong>Залиште свої дані, ми вам передзвонимо</strong>
+          <strong class="modal-label"
+            >Залиште свої дані, ми вам передзвонимо</strong
+          >
           <form class="modal-form" name="modal_form">
             <div class="modal-form-group" role="group">
               <label class="modal-form-label" for="user_name">Ім'я</label>
@@ -104,7 +106,7 @@
                   id="user_name"
                 />
                 <svg class="modal-form-icon" width="18" height="18">
-                  <use href="./images/icons/icons.svg#"></use>
+                  <use href="./images/icons/icons.svg#icon-person-modal"></use>
                 </svg>
               </div>
               <label class="modal-form-label" for="user_phone">Телефон</label>
@@ -116,7 +118,7 @@
                   id="user_phone"
                 />
                 <svg class="modal-form-icon" width="18" height="18">
-                  <use href="./images/icons/icons.svg#"></use>
+                  <use href="./images/icons/icons.svg#icon-phone-modal"></use>
                 </svg>
               </div>
               <label class="modal-form-label" for="user_mail">Пошта</label>
@@ -128,7 +130,7 @@
                   id="user_mail"
                 />
                 <svg class="modal-form-icon" width="18" height="18">
-                  <use href="./images/icons/icons.svg#"></use>
+                  <use href="./images/icons/icons.svg#icon-email-modal"></use>
                 </svg>
               </div>
               <label class="modal-form-label" for="user_message"
@@ -141,18 +143,23 @@
                 rows="6"
               ></textarea>
             </div>
-            <div role="group">
+
+            <div class="modal-form-agreement" role="group">
               <input
                 class="modal-form-checkbox"
                 type="checkbox"
                 id="user_agreement"
               />
-              <label for="user_agreement"
+              <label class="modal-form-agreement-desc" for="user_agreement"
                 >Погоджуюся з розсилкою та приймаю
-                <a href="">Умови договору</a></label
+                <a class="modal-form-agreement-link" href=""
+                  >Умови договору</a
+                ></label
               >
             </div>
-            <button class="modal-form-btn" type="submit">Відправити</button>
+            <button class="modal-form-btn hero-btn" type="submit">
+              Відправити
+            </button>
           </form>
         </div>
       </div>
@@ -762,8 +769,8 @@
               type="email"
               name="user_mail"
               id="user_mail"
-              placeholder="   E-mail"
               required
+              placeholder="   E-mail"
             />
             <button class="send-btn hero-btn" type="submit">
               Підписатися
