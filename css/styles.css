@@ -386,6 +386,13 @@ address {
   fill: var(--attention-color);
 }
 
+.modal-form-agreement-desc {
+    line-height: 1.71%;
+    letter-spacing: 0.03em;
+  
+    color: var(--feature-color);
+}
+
 .modal-form-checkbox {
   appearance: none;
   outline: 2px solid transparent;
@@ -395,6 +402,10 @@ address {
   border-radius: 2px;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.modal-form-checkbox:focus {
+  border-color: var(--attention-color);
 }
 
 .modal-form-checkbox:checked {
@@ -597,7 +608,7 @@ background-image: url("data:image/svg+xml,%3Csvg width='13' height='10' viewBox=
 
 .footer-container {
   display: flex;
-  gap: 70px;
+ justify-content: space-between;
 }
 
 .footer-logo {
@@ -715,6 +726,7 @@ background-image: url("data:image/svg+xml,%3Csvg width='13' height='10' viewBox=
   border-radius: 4px;
   color: var(--hat-color);
   background-color: inherit;
+  padding-left: 16px;
 }
 .send-btn {
   display: inline-flex;
