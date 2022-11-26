@@ -387,7 +387,7 @@ address {
 }
 
 .modal-form-agreement-desc {
-    line-height: 1.71%;
+    line-height: 1.71;
     letter-spacing: 0.03em;
   
     color: var(--feature-color);
